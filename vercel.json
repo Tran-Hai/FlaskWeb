@@ -1,14 +1,20 @@
  {
      "builds": [
          {
-             "src": "app.py",
+             "src": "Web/app.py",
              "use": "@vercel/python"
          }
      ],
      "routes": [
          {
              "src": "/(.*)",
-             "dest": "app.py"
+             "dest": "Web/app.py"
          }
      ]
  }
+
+
+
+// {
+//     "rewrites": [{ "source": "/(.*)", "destination": "/Web/app" }]
+// }
