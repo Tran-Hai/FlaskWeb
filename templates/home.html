@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="line1">
+            <div class="block1">
+                <p>Linh Kiện Đồng Bộ</p>
+                <div class="chart" id="first">
+                    {{ plot_div1 | safe }}
+                </div>
+            </div>
+
+            <div class="block2">
+                <p>Linh Kiện Không Thể Tháo Rời</p>
+                <div class="chart" id="second">
+                    {{ plot_div2 | safe }}
+                </div>
+            </div>
+        </div>
+
+        <div class="line2">
+            <div class="block3">
+                <p>Mã Hiện Tượng</p>
+                <div class="chart" id="third">
+                    {{ plot_div3 | safe }}
+                </div>
+            </div>
+
+            <div class="block4">
+                <p>Mã Nguyên Nhân</p>
+                <div class="chart" id="fourth">
+                    {{ plot_div4 | safe }}
+                </div>
+            </div>
+
+            <div class="block5">
+                <p>Mã Nguyên Nhân Gốc</p>
+                <div class="chart" id="fifth">
+                    {{ plot_div5 | safe }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
